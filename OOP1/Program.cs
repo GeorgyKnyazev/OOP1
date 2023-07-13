@@ -1,6 +1,4 @@
 ﻿ using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OOP1
 {
@@ -14,26 +12,26 @@ namespace OOP1
 
             Console.ReadKey();
         }
+    }
 
-        class Player
+    class Player
+    {
+        private string _name;
+        private string _surname;
+        private int _age;
+
+        public Player(string name, string surname, int age)
         {
-            private string Name;
-            private string Surname;
-            private int Age;
+            _name = name;
+            _surname = surname;
+            _age = age;
+        }
 
-            public Player(string name, string surname, int age)
-            {
-                Name = name;
-                Surname = surname;
-                Age = age;
-            }
-
-            public void ShowData()
-            {
-                Console.WriteLine("Имя " + Name);
-                Console.WriteLine("Фамилия " + Surname);
-                Console.WriteLine("Возвраст " + Age);
-            }
+        public void ShowData()
+        {
+            Console.WriteLine("Имя " + _name);
+            Console.WriteLine("Фамилия " + _surname);
+            Console.WriteLine("Возвраст " + _age);
         }
     }
 }
