@@ -10,16 +10,16 @@ namespace OOP1
         {
             Player player1 = new Player("Иван" , "Иванов", 45);
 
-            player1.ShowPlayerData();
+            player1.ShowData();
 
             Console.ReadKey();
         }
 
         class Player
         {
-            public string Name;
-            public string Surname;
-            public int Age;
+            private string Name;
+            private string Surname;
+            private int Age;
 
             public Player(string name, string surname, int age)
             {
@@ -28,7 +28,7 @@ namespace OOP1
                 Age = age;
             }
 
-            public void ShowPlayerData()
+            public void ShowData()
             {
                 Console.WriteLine("Имя " + Name);
                 Console.WriteLine("Фамилия " + Surname);
